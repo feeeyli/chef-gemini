@@ -147,7 +147,7 @@ function App() {
               fieldType: "textarea",
             },
           }}
-          className="px-12"
+          className="px-12 max-w-lg mx-auto"
           onSubmit={(values) => generateRecipe(values)}
         >
           <Button type="submit" className="w-full" disabled={loading}>
@@ -161,7 +161,7 @@ function App() {
         </AutoForm>
       )}
       {recipe && (
-        <div className="w-full px-8 flex flex-col gap-5">
+        <div className="w-full px-8 flex flex-col gap-5 max-w-3xl">
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight text-center">
             {recipe.title}
           </h2>
